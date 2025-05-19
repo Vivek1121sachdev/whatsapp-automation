@@ -1,0 +1,9 @@
+[17355:17355:0516/161819.678203:INFO:chrome_browser_cloud_management_controller.cc(202)] No machine level policy manager exists.
+[17392:17392:0516/161819.723842:WARNING:sandbox_linux.cc(415)] InitializeSandbox() called with multiple threads in process gpu-process.
+[17355:17355:0516/161819.928101:INFO:CONSOLE(31)] "Slow network is detected. See https://www.chromestatus.com/feature/5636954674692096 for more details. Fallback font will be used while loading: chrome://resources/roboto/roboto-regular.woff2", source: chrome://new-tab-page/ (31)
+[17355:17355:0516/161820.195306:INFO:CONSOLE(0)] "Slow network is detected. See https://www.chromestatus.com/feature/5636954674692096 for more details. Fallback font will be used while loading: chrome://resources/roboto/roboto-medium.woff2", source: chrome://new-tab-page/ (0)
+[17355:17355:0516/161820.547036:INFO:CONSOLE(157)] "Event handler of 'x-storagemutated-1' event must be added on the initial evaluation of worker script.", source: https://static.whatsapp.net/rsrc.php/v4/y7/r/eLz1wlKTyly.js (157)
+[17355:17355:0516/161820.697945:INFO:CONSOLE(0)] "Error with Permissions-Policy header: Unrecognized feature: 'bluetooth'.", source:  (0)
+[17355:17355:0516/161823.024658:INFO:CONSOLE(0)] "Error with Permissions-Policy header: Unrecognized feature: 'bluetooth'.", source:  (0)
+[17355:17355:0516/161857.068829:INFO:CONSOLE(157)] "Event handler of 'x-storagemutated-1' event must be added on the initial evaluation of worker script.", source: https://static.whatsapp.net/rsrc.php/v4/y7/r/eLz1wlKTyly.js (157)
+[17355:17355:0516/161902.041929:ERROR:atom_cache.cc(231)] Add WM_CHANGE_STATE to kAtomsToCache

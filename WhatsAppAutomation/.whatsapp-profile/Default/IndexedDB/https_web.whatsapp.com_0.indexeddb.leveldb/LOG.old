@@ -1,0 +1,21 @@
+2025/05/16-16:12:24.581 41b6 Reusing MANIFEST /home/mahamadgaus/Desktop/WPAutomation/WhatsAppAutomation/.whatsapp-profile/Default/IndexedDB/https_web.whatsapp.com_0.indexeddb.leveldb/MANIFEST-000001
+2025/05/16-16:12:24.582 41b6 Recovering log #161
+2025/05/16-16:12:24.587 41b6 Reusing old log /home/mahamadgaus/Desktop/WPAutomation/WhatsAppAutomation/.whatsapp-profile/Default/IndexedDB/https_web.whatsapp.com_0.indexeddb.leveldb/000161.log 
+2025/05/16-16:12:25.313 41b8 Level-0 table #167: started
+2025/05/16-16:12:25.319 41b8 Level-0 table #167: 174265 bytes OK
+2025/05/16-16:12:25.322 41b8 Delete type=0 #161
+2025/05/16-16:12:25.322 41b7 Manual compaction at level-0 from '\x00?\x00\x00\x00' @ 72057594037927935 : 1 .. '\x00@\x00\x00\x00' @ 0 : 0; will stop at (end)
+2025/05/16-16:12:26.940 41b8 Compacting 1@1 + 1@2 files
+2025/05/16-16:12:26.978 41b8 Generated table #168@1: 31363 keys, 1288816 bytes
+2025/05/16-16:12:26.978 41b8 Compacted 1@1 + 1@2 files => 1288816 bytes
+2025/05/16-16:12:26.981 41b8 compacted to: files[ 0 0 1 0 0 0 0 ]
+2025/05/16-16:12:27.694 41b8 Level-0 table #170: started
+2025/05/16-16:12:27.697 41b8 Level-0 table #170: 19655 bytes OK
+2025/05/16-16:12:27.700 41b8 Delete type=2 #167
+2025/05/16-16:12:27.700 41b8 Delete type=0 #166
+2025/05/16-16:12:27.700 41b8 Delete type=2 #164
+2025/05/16-16:12:27.701 41b6 Manual compaction at level-0 from '\x00@\x00\x00\x00' @ 72057594037927935 : 1 .. '\x00A\x00\x00\x00' @ 0 : 0; will stop at (end)
+2025/05/16-16:12:29.188 41b8 Compacting 1@1 + 1@2 files
+2025/05/16-16:12:29.228 41b8 Generated table #171@1: 31537 keys, 1295118 bytes
+2025/05/16-16:12:29.229 41b8 Compacted 1@1 + 1@2 files => 1295118 bytes
+2025/05/16-16:12:29.231 41b8 compacted to: files[ 0 0 1 0 0 0 0 ]
