@@ -3,7 +3,6 @@ package test;
 import java.io.File;
 import java.io.IOException;
 import java.time.Duration;
-
 import org.apache.logging.log4j.LogManager;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -19,7 +18,7 @@ import base.ExcelAppender;
 import base.WPHomePageElements;
 import io.github.bonigarcia.wdm.WebDriverManager;
 
-public class WhatsAppLogin {
+public class ReceivedMessages {
 
 	WebDriver driver;
 	BaseClass baseClass;
@@ -27,10 +26,11 @@ public class WhatsAppLogin {
 	WPHomePageElements wPHomePage;
 	SoftAssert softAssert = new SoftAssert();
 	static final String COOKIES_FILE = "whatsapp_cookies.ser";
-	private static final org.apache.logging.log4j.Logger logger = LogManager.getLogger(WhatsAppLogin.class);
+	private static final org.apache.logging.log4j.Logger logger = LogManager.getLogger(ReceivedMessages.class);
 
 	@Test
 	public void loginToWhatsApp() throws ClassNotFoundException, IOException, InterruptedException {
+
 		WebDriverManager.chromedriver().setup();
 		ChromeOptions options = new ChromeOptions();
 		options.addArguments(
@@ -75,32 +75,48 @@ public class WhatsAppLogin {
 		}
 
 		Thread.sleep(1000);
-		wPHomePage.clickOnCommonGroup();
-		logger.info("User clicked on Common Group");
-		Thread.sleep(1000);
 		
-		// Type a message to send in Common group
-		wPHomePage.typeMessage("Ahmedabad");
-		Thread.sleep(1000);
-		wPHomePage.clickOnSendButton();
-		Thread.sleep(1000);
+		WebDriverWait wait1 = new WebDriverWait(driver, Duration.ofSeconds(600000));
+		WebElement unreadMessage = wait1.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//*[contains(@aria-label, 'unread message')]")));
 		
-		if(wPHomePage.messageToSend.equals("Ahmedabad")) {
-			wPHomePage.clickOnAhmedabadGroup();
+		
+		if(unreadMessage.isDisplayed() && driver.findElement(By.xpath("//span[@title='Aasim Mulla']")).isDisplayed()) {
+			driver.findElement(By.xpath("//span[@title='Aasim Mulla']")).click();
+			
+			String recText = driver.findElement(By.xpath("(//span[text()='Mumbai'])[last()]")).getText();
 			Thread.sleep(1000);
-			wPHomePage.typeMessage("Ahmedabad1");
+			wPHomePage.clickOnCommonGroup();
+			logger.info("User clicked on Common Group");
+			Thread.sleep(1000);
+			
+			// Type a message to send in Common group
+			wPHomePage.typeMessage(recText);
 			Thread.sleep(1000);
 			wPHomePage.clickOnSendButton();
-			ExcelAppender.appendToExcel("Ahmedabad1");
-		}
-		else if(wPHomePage.messageToSend.equals("Mumbai")) {
-			wPHomePage.clickOnMumbaiGroup();
 			Thread.sleep(1000);
-			wPHomePage.typeMessage("Mumbai1");
-			Thread.sleep(1000);
-			wPHomePage.clickOnSendButton();
-			ExcelAppender.appendToExcel("Mumbai1");
+			
+			if(wPHomePage.messageToSend.equals("Ahmedabad")) {
+				wPHomePage.clickOnAhmedabadGroup();
+				Thread.sleep(1000);
+				wPHomePage.typeMessage("Ahmedabad1");
+				Thread.sleep(1000);
+				wPHomePage.clickOnSendButton();
+				ExcelAppender.appendToExcel("Ahmedabad1");
+			}
+			else if(wPHomePage.messageToSend.equals("Mumbai")) {
+				wPHomePage.clickOnMumbaiGroup();
+				Thread.sleep(1000);
+				wPHomePage.typeMessage("Mumbai1");
+				Thread.sleep(1000);
+				wPHomePage.clickOnSendButton();
+				ExcelAppender.appendToExcel("Mumbai1");
+			}
+			
 		}
+		
+		
+		
+		
 		
 		
 		

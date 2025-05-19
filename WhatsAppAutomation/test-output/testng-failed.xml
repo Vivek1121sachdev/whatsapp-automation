@@ -3,11 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="test.WhatsAppLogin">
+      <class name="test.ReceivedMessages">
         <methods>
           <include name="loginToWhatsApp"/>
         </methods>
-      </class> <!-- test.WhatsAppLogin -->
+      </class> <!-- test.ReceivedMessages -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
