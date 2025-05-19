@@ -1,0 +1,26 @@
+2025/05/16-16:18:20.558 43dd Reusing MANIFEST /home/mahamadgaus/Desktop/WPAutomation/WhatsAppAutomation/.whatsapp-profile/Default/IndexedDB/https_web.whatsapp.com_0.indexeddb.leveldb/MANIFEST-000001
+2025/05/16-16:18:20.559 43dd Recovering log #169
+2025/05/16-16:18:20.564 43dd Reusing old log /home/mahamadgaus/Desktop/WPAutomation/WhatsAppAutomation/.whatsapp-profile/Default/IndexedDB/https_web.whatsapp.com_0.indexeddb.leveldb/000169.log 
+2025/05/16-16:18:20.565 43dd Delete type=2 #170
+2025/05/16-16:18:20.565 43dd Delete type=2 #168
+2025/05/16-16:18:21.424 43de Level-0 table #174: started
+2025/05/16-16:18:21.430 43de Level-0 table #174: 192024 bytes OK
+2025/05/16-16:18:21.433 43de Delete type=0 #169
+2025/05/16-16:18:21.433 43dc Manual compaction at level-0 from '\x00A\x00\x00\x00' @ 72057594037927935 : 1 .. '\x00B\x00\x00\x00' @ 0 : 0; will stop at (end)
+2025/05/16-16:18:23.409 43e8 Level-0 table #176: started
+2025/05/16-16:18:23.412 43e8 Level-0 table #176: 865 bytes OK
+2025/05/16-16:18:23.416 43e8 Delete type=0 #173
+2025/05/16-16:18:23.417 43dd Manual compaction at level-0 from '\x00B\x00\x00\x00' @ 72057594037927935 : 1 .. '\x00C\x00\x00\x00' @ 0 : 0; will stop at '\x00B\x00\x00\x05' @ 167949 : 1
+2025/05/16-16:18:23.417 43dd Compacting 1@0 + 1@1 files
+2025/05/16-16:18:23.423 43dd Generated table #177@0: 3978 keys, 93732 bytes
+2025/05/16-16:18:23.423 43dd Compacted 1@0 + 1@1 files => 93732 bytes
+2025/05/16-16:18:23.425 43dd compacted to: files[ 0 1 1 0 0 0 0 ]
+2025/05/16-16:18:23.426 43dd Delete type=2 #176
+2025/05/16-16:18:23.426 43dd Manual compaction at level-0 from '\x00B\x00\x00\x05' @ 167949 : 1 .. '\x00C\x00\x00\x00' @ 0 : 0; will stop at (end)
+2025/05/16-16:18:24.906 43dd Compacting 1@1 + 1@2 files
+2025/05/16-16:18:24.957 43dd Generated table #178@1: 32950 keys, 1347919 bytes
+2025/05/16-16:18:24.957 43dd Compacted 1@1 + 1@2 files => 1347919 bytes
+2025/05/16-16:18:24.959 43dd compacted to: files[ 0 0 1 0 0 0 0 ]
+2025/05/16-16:18:24.961 43dd Delete type=2 #171
+2025/05/16-16:18:24.961 43dd Delete type=2 #174
+2025/05/16-16:18:24.961 43dd Delete type=2 #177
