@@ -1,0 +1,37 @@
+package test;
+
+import java.io.File;
+import java.io.FileInputStream;
+import java.io.FileOutputStream;
+import java.io.IOException;
+import java.io.ObjectInputStream;
+import java.io.ObjectOutputStream;
+import java.time.Duration;
+import java.util.Set;
+import java.util.concurrent.TimeoutException;
+
+import org.apache.logging.log4j.LogManager;
+import org.openqa.selenium.By;
+import org.openqa.selenium.Cookie;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
+import org.testng.annotations.Test;
+import org.testng.asserts.SoftAssert;
+
+import io.github.bonigarcia.wdm.WebDriverManager;
+
+public class WhatsAppLogin {
+
+	
+
+		// Do any automation here...
+		//       /home/mahamadgaus/Desktop/WPAutomation/WhatsAppAutomation/.whatsapp-profile
+		// Keep session alive
+		//Thread.sleep(10000);
+		//driver.quit();
+	
+	
+}

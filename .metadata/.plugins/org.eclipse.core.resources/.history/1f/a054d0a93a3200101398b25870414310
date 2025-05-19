@@ -1,0 +1,39 @@
+package base;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.PageFactory;
+
+public class WPHomePageElements {
+
+	WebDriver driver;
+
+	@FindBy(xpath = "//button[@class='option-btn paperclip-icon']")
+	private WebElement AttachmentButton;
+
+	@FindBy(xpath = "//div[@class='chatIcon']")
+	private WebElement NewChatButton;
+	
+	@FindBy(xpath = "//button[@class='option-btn send-icon file-attached']")
+	private WebElement uploadFileButton;
+
+	public WPHomePageElements(WebDriver driver) {
+
+		PageFactory.initElements(driver, this);
+		driver = this.driver;
+	}
+
+	public void clearChatHistory() {
+		NewChatButton.click();
+	}
+	
+	public void clickOnUploadFileButton() {
+		uploadFileButton.click();
+	}
+
+	public void uploadAttachment() {
+		//AttachmentButton.click();
+	}
+	
+}

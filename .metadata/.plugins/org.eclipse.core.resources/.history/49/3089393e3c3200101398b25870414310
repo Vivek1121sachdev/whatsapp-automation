@@ -1,0 +1,39 @@
+package base;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.PageFactory;
+
+public class WPHomePageElements {
+
+	WebDriver driver;
+
+	@FindBy(xpath = "//span[@title='Common Group']")
+	private WebElement CommonGroup;
+
+	@FindBy(xpath = "")
+	private WebElement GroupAhmedabad;
+
+	@FindBy(xpath = "")
+	private WebElement GroupMumbai;
+
+	public WPHomePageElements(WebDriver driver) {
+
+		PageFactory.initElements(driver, this);
+		driver = this.driver;
+	}
+
+	public void clearChatHistory() {
+		NewChatButton.click();
+	}
+
+	public void clickOnUploadFileButton() {
+		uploadFileButton.click();
+	}
+
+	public void uploadAttachment() {
+		// AttachmentButton.click();
+	}
+	
+}
